@@ -1,0 +1,319 @@
+{
+    "questions": [
+        {
+            "title": "Me siento menos comprometida/o con el trabajo que hago.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Últimamente me siento menos amistosa/o y comprensiva/o con las personas en mi trabajo.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Tengo dificultades para relajarme después de trabajar?",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Siento que no estoy alcanzando mis objetivos.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Me preocupa que este trabajo me esté haciendo más frío.(deshumanizando)",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Creo que no soy eficiente en mi trabajo.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "No me siento a gusto con mi trabajo.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "No me despierto con energía para trabajar.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "No estoy seguro/a del impacto y relevancia de mi trabajo.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Mi trabajo no me entusiasma.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "No, jamás"
+                },
+                {
+                    "id": 1,
+                    "title": "Ocasionalmente"
+                },
+                {
+                    "id": 2,
+                    "title": "De vez en cuando"
+                },
+                {
+                    "id": 3,
+                    "title": "A veces"
+                },
+                {
+                    "id": 4,
+                    "title": "Bastante"
+                },
+                {
+                    "id": 5,
+                    "title": "Frecuentemente"
+                }
+            ]
+        },
+        {
+            "title": "Abandonaré esta empresa pronto.",
+            "options": [
+                {
+                    "id": 0,
+                    "title": "Estoy en total desacuerdo"
+                },
+                {
+                    "id": 1,
+                    "title": "En desacuerdo parcial"
+                },
+                {
+                    "id": 2,
+                    "title": "Ni acuerdo ni desacuerdo"
+                },
+                {
+                    "id": 3,
+                    "title": "En acuerdo parcial"
+                },
+                {
+                    "id": 4,
+                    "title": "Totalmente de acuerdo"
+                }
+            ]
+        }
+    ]
+}
