@@ -21,7 +21,7 @@ class ListResultsPage extends StatelessWidget {
   
   Widget _listTests() {
     return FutureBuilder(
-      future: DBProvider.db.obtenerTestsUltimoMes(),
+      future: DBProvider.db.getTodosTests(),
       builder: (BuildContext context, AsyncSnapshot<List<TestModel>> snapshot) {
         if(snapshot.hasData) {
           final tests = snapshot.data as dynamic;

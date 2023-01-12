@@ -15,7 +15,7 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   final advice = 'Es importante que busques ayuda profesional. Un psicólogo o un terapeuta pueden ayudarte a identificar las causas del burnout y a encontrar maneras de manejar el estrés y la fatiga. Además, es importante que tomes tiempo para descansar y relajarte, y que trates de encontrar un equilibrio entre tu vida laboral y personal.';
-  
+  final adviceNot = '¡Felicidades por pasar el test de burnout! Eso es un logro importante y muestra que estás haciendo un gran trabajo en cuidar tu bienestar y equilibrio en el trabajo y en la vida. No tener burnout es una señal de que estás haciendo un buen trabajo en manejar el estrés y las exigencias de tu trabajo y vida. ¡Sigue haciendo lo que estás haciendo y no dudes en buscar apoyo si necesitas ayuda para mantener el equilibrio y la salud mental en el futuro!';
   @override
   Widget build(BuildContext context) {    
     final ArgumentsResume args = ModalRoute.of(context)?.settings.arguments as ArgumentsResume;
@@ -68,14 +68,14 @@ class _ResultPageState extends State<ResultPage> {
         children: <Widget>[
           _assetResult(heightDevice, isBurnout),
           _infoResult(results, isBurnout),
-          (isBurnout==1) ? Container(
+          Container(
             margin: EdgeInsets.only(top: 25.0),
             padding: EdgeInsets.symmetric(horizontal: 26.0),
-            child: Text(advice,
+            child: Text(isBurnout==1 ? advice : adviceNot, 
               textAlign: TextAlign.justify,
               style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
             )
-          ) : Container()
+          )
         ],
       );
   }
@@ -143,11 +143,19 @@ class _ResultPageState extends State<ResultPage> {
           return Container(
             color: (result.idSelection as int) >= 4 ? Colors.red : Colors.green,
             width: 24.0,
+            alignment: Alignment.center,
+            child: Text(result.idQuestion.toString(),
+              style: TextStyle(color: Colors.white),
+            ),
           );
         } else {
           return Container(
             color: (result.idSelection as int) >= 3 ? Colors.red : Colors.green,
             width: 24.0,
+            alignment: Alignment.center,
+            child: Text(result.idQuestion.toString(),
+              style: TextStyle(color: Colors.white),
+            ),
           );
         }
       },

@@ -73,7 +73,7 @@ class _QuestionPageState extends State<QuestionPage> {
               _prevButton(context)
             ]),
           ),
-        )
+        ),
       ],
     );
   }
@@ -100,7 +100,7 @@ class _QuestionPageState extends State<QuestionPage> {
     return SafeArea(
       child: Container(
         width: double.infinity,
-        padding: EdgeInsets.only(left: 24.0,right: 24.0, bottom: 20.0, top: 10.0),
+        padding: EdgeInsets.only(left: 24.0,right: 24.0, bottom: 20.0, top: 0.0),
         margin: EdgeInsets.only(top: heightDevice * 0.20),
         height: heightDevice * 0.6, 
         child: _lista(heightDevice)
@@ -142,43 +142,46 @@ class _QuestionPageState extends State<QuestionPage> {
     return Positioned(
       top: 0.0,
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 20.0,bottom: 15.0, left: 24.0),
-              padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
-              decoration: BoxDecoration(
-                color: Color(0xff40DF9F),
-                borderRadius: BorderRadius.circular(12.0)
-              ),
-              child: Text('$indexQuestion de 10',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Roboto',
-                  fontWeight: FontWeight.w500,
-                  decoration: TextDecoration.none,
-                  fontSize: 16.0,
+        child: Container(
+          height: heightDevice * 0.25,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 24.0, vertical: heightDevice * 0.009),
+                padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+                decoration: BoxDecoration(
+                  color: Color(0xff40DF9F),
+                  borderRadius: BorderRadius.circular(12.0)
+                ),
+                child: Text('$indexQuestion de 10',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Roboto',
+                    fontWeight: FontWeight.w500,
+                    decoration: TextDecoration.none,
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
-            ),
-            Container(
-              height: heightDevice * 0.1,
-              width: widthDevice,
-              padding: EdgeInsets.symmetric(horizontal: 24.0),
-              alignment: Alignment.center,
-              child: Text(title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Roboto',
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.none,
-                  fontSize: 22.0,
-                )
+              Container(
+                height: heightDevice * 0.15,
+                width: widthDevice,
+                padding: EdgeInsets.symmetric(horizontal: 24.0),
+                alignment: Alignment.center,
+                child: Text(title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Roboto',
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.none,
+                    fontSize: 20.0,
+                  )
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

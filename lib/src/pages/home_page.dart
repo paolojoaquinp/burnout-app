@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
   Widget _headerHomePage(double heightDevice) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 24.0,vertical: 20.0),
+        padding: EdgeInsets.symmetric(horizontal: 24.0,vertical: heightDevice * 0.02), // 2%
         color: Colors.white,
         width: double.infinity,
         height: heightDevice * 0.3,
@@ -76,10 +76,16 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 CircleAvatar(
+                  child: Image(
+                    image: AssetImage('assets/icon-burnout.png')
+                  )
+                ),
+                CircleAvatar(
                   child: Text((_prefs.nombre.length > 0) ? _prefs.nombre[0] : ''),
-                )   
+                ),
               ],
             ),
             SizedBox(height: 15.0,),
@@ -92,9 +98,32 @@ class _HomePageState extends State<HomePage> {
                 fontWeight: FontWeight.bold,
                 fontSize: 26.0
               ),
-            )
+            ),
+            _testButton(context, heightDevice)
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _testButton(BuildContext context, double heightDevice) {
+    final width = MediaQuery.of(context).size.width;  
+    final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
+      backgroundColor: Color(0xff3ED598),
+      minimumSize: Size(width, heightDevice * 0.045),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(12.0)),
+      ),
+    );
+    return ElevatedButton(
+      style: raisedButtonStyle,
+      onPressed: () {
+        Navigator.pushNamed(context, 'question');
+      },
+      child: Container(
+        width: width,
+        child: Text('Click para averiguar!',
+        textAlign: TextAlign.center,)
       ),
     );
   }
@@ -112,8 +141,9 @@ class _HomePageState extends State<HomePage> {
           FutureBuilder(
             future: utils.analyticsYesterday(),
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
-              if(snapshot.hasData) {
-                final isBurnout = snapshot.data as bool;
+              if(!snapshot.hasData) {
+                /* final isBurnout = snapshot.data as bool; */
+                final isBurnout = true;
                 return CardWidget(
                   heightDevice: heightBody,
                   iconCard: isBurnout ? 'burnout-icon.png' : 'success-icon.png',
@@ -134,8 +164,9 @@ class _HomePageState extends State<HomePage> {
           FutureBuilder(
             future: utils.analyticsPerWeek(),
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
-              if(snapshot.hasData) {
-                final isBurnout = snapshot.data as bool;
+              if(!snapshot.hasData) {
+                /* final isBurnout = snapshot.data as bool; */
+                final isBurnout = false;
                 return CardWidget(
                   heightDevice: heightBody,
                   iconCard: isBurnout ? 'burnout-icon.png' : 'success-icon.png',

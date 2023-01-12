@@ -20,14 +20,14 @@ class ItemQuestionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.only(bottom:6.0,left: 6.0,right: 0,top: 6.0),
+        padding: EdgeInsets.only(bottom:2.0,left: 6.0,right: 0,top: 6.0),
       ),
       key: UniqueKey(),
       onPressed: () {
         handleSelected(option?.id);
       },
       child: Container(
-        height: heightParent * 0.08,
+        height: heightParent * 0.073,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
           border: Border.all(

@@ -6,7 +6,7 @@ int isBurnOut(List<Result> results) {
   int cWithout = 0;
   int cWith = 0;
   results.forEach((element) {
-    if(element.idQuestion != 10) { 
+    if(element.idQuestion != 4) { 
       if((element.idSelection as int) >= 4) { cWith++; } else { cWithout++; }
     } else {
       if((element.idSelection as int) >= 3) { cWith++; } else { cWithout++; }

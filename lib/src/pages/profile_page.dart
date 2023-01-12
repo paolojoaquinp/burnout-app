@@ -63,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
         )
       ),
       decoration: BoxDecoration(
-        color: Color.fromRGBO(68, 121, 255, 1),
+        color: Color(0xff141F6D),
         borderRadius: BorderRadius.circular(10.0)
       ),
     );
